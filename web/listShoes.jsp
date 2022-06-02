@@ -16,7 +16,7 @@
                     ${brand.name}
                 </c:forEach>
               </h4>
-                <p class="card-text">${shoes.year}</p>
+                <p class="card-text">${shoes.price} евро</p>
                 <a class="card-body" href="buyShoes?shoesId=${shoes.id}">Купить</a>
                 <c:if test="${role eq 'MANAGER' or role eq 'ADMINISTRATOR'}">
                     <a class="card-body" href="editShoes?shoesId=${shoes.id}">Редактировать</a>
